@@ -1,0 +1,81 @@
+/* Center the calculator on the screen */
+.calculator {
+    width: 320px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Display screen styling */
+.value {
+    width: 100%;
+    height: 60px;
+    background: #333;
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Grid layout for buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Default button style */
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background: #666;
+}
+
+/* Clear button style */
+.clear {
+    background: red;
+    color: white;
+    grid-column: span 2; /* Make it double-width */
+}
+
+.clear:hover {
+    background: darkred;
+}
+
+/* Equal button style */
+.equal {
+    background: green;
+    color: white;
+    grid-column: span 2; /* Make it double-width */
+}
+
+.equal:hover {
+    background: darkgreen;
+}
+
+/* Plus button styling */
+.plus {
+    background: orange;
+}
+
+.plus:hover {
+    background: darkorange;
+}
